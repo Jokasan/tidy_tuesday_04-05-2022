@@ -31,7 +31,7 @@ tt %>% ggplot(aes(year,cost,color=type))+
   labs(
     x="",
     y="Cost",
-    title = "Energy costs cover the years",
+    title = "Energy costs over the years",
     subtitle = "Solar has experienced the most drastic decrease in costs",
     caption = "Data from Tidy Tuesday: 04-05-2022")+
     tidyquant::theme_tq()+
@@ -84,4 +84,3 @@ solar %>%
 #   plotly::ggplotly() -> plot3
 
 ((plot2/plot3|plot1))
-
